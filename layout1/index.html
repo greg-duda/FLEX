@@ -1,103 +1,97 @@
 <!doctype html>
 
 <html lang="PL">
-<head>
-  <meta charset="utf-8">
-  <title>FLEX</title>
-  <style>
-      body {
-          margin: 0;
-      }
-      .content {
-          background-color: goldenrod;
-          width: 100%;
-          height: 100vh;
-          display: flex;
-          flex-wrap: wrap;
-          align-content: space-evenly;
-          justify-content: space-evenly;
 
-      }
-      .box {
-          display: flex;
-          background-color: grey;
-          width: 30%;
-          flex-wrap: wrap;
-          flex-direction: column;
-          height: 40%;
-          align-items: center;
-          justify-content: space-evenly;
-          
-          
-          
-          
-          
-          
-          
-          
-      }
-      .element1 {
-          width: 90%;
-          height: 20%;
-          background-color: lightgreen;
-          
-          ]
-          
-          
-          
-          /*niestety/stety musiałem zastosować wymiary procentowe, gdyż odstępy między elementami nie tworzyły się gdy używałem flex-grow...*/
-          
-          
-      }
-      .element2 {
-          
-          background-color: lightcyan;
-          height: 70%;
-          width: 90%;
-          
-          
-          
-          
-      }
-     
-}
-  </style>
+<head>
+    <meta charset="utf-8">
+    <title>FLEX</title>
+    <style>
+    body {
+            margin: 0;
+        }
+        
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: burlywood;
+        }
+        
+        .footer {
+            width: 100%;
+            background-color: burlywood;
+            height: 50px;
+        }
+        
+        .content {
+            background-color: brown;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+            justify-content: space-evenly;
+        }
+        
+        .box {
+            display: flex;
+            background-color: burlywood;
+            width: 30%;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 40%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        .element1 {
+            width: 85%;
+            height: 20%;
+            background-color: brown;
+            ]
+            /*niestety/stety musiałem zastosować wymiary procentowe, gdyż odstępy między elementami nie tworzyły się gdy używałem flex-grow...*/
+        }
+        
+        .element2 {
+            background-color: brown;
+            height: 60%;
+            width: 85%;
+        }
+    }
+    </style>
 
 </head>
+
 <body>
+    <div class="header"></div>
     <div class="content">
-    <div class="box">
-        <div class="element1"></div>
-        <div class="element2"></div>
+        <div class="box">
+            <div class="element1"></div>
+            <div class="element2"></div>
+        </div>
+        <div class="box">
+            <div class="element1"></div>
+            <div class="element2"></div>
+        </div>
+        <div class="box">
+            <div class="element1"></div>
+            <div class="element2"></div>
+        </div>
+        <div class="box">
+            <div class="element1"></div>
+            <div class="element2"></div>
+        </div>
+        <div class="box">
+            <div class="element1"></div>
+            <div class="element2"></div>
+        </div>
+        <div class="box">
+            <div class="element1"></div>
+            <div class="element2"></div>
+        </div>
     </div>
-    <div class="box">
-        <div class="element1"></div>
-        <div class="element2"></div>
-    </div>
-    <div class="box">
-        <div class="element1"></div>
-        <div class="element2"></div>
-    </div>
-    <div class="box">
-        <div class="element1"></div>
-        <div class="element2"></div>
-    </div>
-    <div class="box">
-        <div class="element1"></div>
-        <div class="element2"></div>
-    </div>
-    <div class="box">
-        <div class="element1"></div>
-        <div class="element2"></div>
-    </div>
-    
+    <div class="footer"></div>
 
 
-
-
-
-
-    </div>
-   
 </body>
+
 </html>
