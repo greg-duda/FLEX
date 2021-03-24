@@ -1,101 +1,119 @@
 <!doctype html>
 
 <html lang="PL">
+
 <head>
-  <meta charset="utf-8">
-  <title>FLEX</title>
-  <style>
-      body {
-          margin: 0;
-
-      }
-      .content {
-          background-color: goldenrod;
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-          height: 100vh;
-          align-content: space-evenly;
-          justify-content: space-evenly;
-      }
-      .box {
-          background-color: gray;
-          width: 95%;
-          height: 40%;
-          flex-direction: row;
-          flex-wrap: wrap;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          
-      }
-      .item1 {
-          background-color: lightcyan;
-          width: 50%;
-          height: 80%;
-
-      }
-      .box2 {
-          width: 40%;
-          height: 80%;
-          display: flex;
-          flex-direction: row;
-          background: gray;
-          justify-content: space-evenly;
-          flex-wrap: wrap;
-          align-content: space-between;
-          
-      }
-      .elements1 {
-          width: 100%;
-          height: 30%;
-          background-color: lightgreen;
-      }
-      
-      
-      .item2 {
-          width: 95%;
-          background-color: lightcyan;
-          height: 45%;
-          
-      }
-      
-.elements2 {
-    
-    height: 45%;
-    background-color: lightgreen;
-    width: 14%;
-    align-self: center;
-}
-  </style>
+    <meta charset="utf-8">
+    <title>FLEX</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .header {
+            width: 100%;
+            height: 20px;
+            background-color: burlywood;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 20px;
+            background-color: burlywood;
+        }
+        
+        .content {
+            background-color: brown;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100vh;
+            align-content: space-evenly;
+            justify-content: space-evenly;
+        }
+        
+        .box {
+            background-color: burlywood;
+            width: 95%;
+            height: 45%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .item1 {
+            background-color: brown;
+            width: 50%;
+            height: 90%;
+        }
+        
+        .box2 {
+            width: 40%;
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            background: burlywood;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        
+        .elements1 {
+            width: 100%;
+            height: 30%;
+            background-color: brown;
+        }
+        
+        .item2 {
+            width: 93.5%;
+            /*XD */
+            background-color: brown;
+            height: 45%;
+            align-self: flex-end;
+        }
+        
+        .elements2 {
+            height: 43%;
+            background-color: brown;
+            width: 13%;
+            align-self: center;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="header"></div>
     <div class="content">
         <div class="box">
-            <div class="item1"></div> <!--tutaj domyślam się że niepotrzebnie zrobilem kolejny kontener, ale coś mi nie wychodziło, więc obszedłem to...-->
+            <div class="item1"></div>
+            <!--tutaj domyślam się że niepotrzebnie zrobilem kolejny kontener, ale coś mi nie wychodziło, więc obszedłem to...-->
             <div class="box2">
                 <div class="elements1"></div>
                 <div class="elements1"></div>
                 <div class="elements1"></div>
             </div>
         </div>
-            <div class="box">
-            
-                <div class="item2"></div>
-                
-                <div class="elements2"></div>
-                <div class="elements2"></div>
-                <div class="elements2"></div>
-                <div class="elements2"></div>
-                <div class="elements2"></div>
-                <div class="elements2"></div>
-            </div>
-            
-        
+        <div class="box">
+
+            <div class="item2"></div>
+
+            <div class="elements2"></div>
+            <div class="elements2"></div>
+            <div class="elements2"></div>
+            <div class="elements2"></div>
+            <div class="elements2"></div>
+            <div class="elements2"></div>
+        </div>
+
+
 
     </div>
     <!-- tak, znowu poległem na wymiarach i pewnie chaos znów, ale wyświetla się dobrze chyba XD-->
+    <div class="footer"></div>
 
 
 </body>
+
 </html>
